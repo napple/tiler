@@ -24,8 +24,8 @@ class Tiler {
 
     val preppedImg = src.copy.padTo(newSize._1, newSize._2, RGBColor(0, 0, 255, 255));
     // Testing... remove following two lines
-    val outFile = new File("newImage.jpg")
-    preppedImg.write(outFile, Format.JPEG)
+    //val outFile = new File("newImage.jpg")
+    //preppedImg.write(outFile, Format.JPEG)
     
     return preppedImg
   }
