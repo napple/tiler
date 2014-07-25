@@ -79,7 +79,6 @@ class Tiler {
     if (image.width <= size._1 * Math.pow(2, level)) {
       outputImage = this.tile(image, level, quadrant, size)
       
-      val outFile = new File("newImage.jpg")
       outputImage.write(filename.format(level, quadrant._1, quadrant._2));
       
       if (level > this.maxZoom) this.maxZoom = level
